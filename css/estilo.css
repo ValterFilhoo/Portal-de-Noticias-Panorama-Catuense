@@ -1,0 +1,676 @@
+/* SELETOR UNIVERSAL */
+* { 
+    margin: 0; /* ESPAÇAMENTO FORA DO ELEMENTO: 0 */ 
+    padding: 0; /* ESPAÇAMENTO DENTRO DO ELEMENTO: 0 */ 
+    box-sizing: border-box; /* TAMANHO TOTAL DO ELEMENTO JÁ INCLUI SUAS BORDAS E MARGENS */
+}
+
+/* SELETOR DO CORPO DA PÁGINA */
+body {
+
+    font-family: Arial, Helvetica, sans-serif; /* TIPO DE FONTE DAS LETRAS */
+    background-color: #fff; /* COR DE FUNDO DO CORPO DA PÁGINA */
+
+}
+
+
+/* INÍCIO DOS ESTILOS DO CABEÇALHO DA PÁGINA INÍCIAL DO PANORAMA CATUENSE */
+.cabeçalho-panorama-catuense { /* invocando a classe do header */
+   
+    display: flex; /* essa propriedade define o container(header) como flexivel, permitindo deixar os elementos filho dele organizados horizontalmente  */
+    flex-direction: column; /* essa propriedade define a direção em que os elementos dentro do header (container flex) irão se alinhar em seu eixo principal, nesse caso em formato vertical */
+    align-items: center; /* essa propriedade define como os elementos filho desse header são alinhados ao longo do eixo transversal, nesse caso no centro do header */
+    margin-bottom: 30px;
+
+}
+
+.logotipo-superior-portal { /* invocando a classe da div que tem a logotipo superior dentro */
+    width: 195px; /* largura da div (container) que armazena a img dentro */
+    height: 97px /* altura da div (container) que armazena a img dentro */
+}
+
+.logotipo-superior-portal img { /* invocando a classe da div que tem a logotipo superior dentro */
+    width: 100%; /* largura da imagem dentro da div */
+}
+
+.menu-categorias-panorama-catuense { /* invocando a classe da nav do cabeçalho e que servirá como container dos seus elementos filhos */
+    
+    width: 100%; /* o container nav usará 100% da largura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 3rem; /* o container nav usará 46px de altura da tela */
+    background-color: #860F0F;
+}
+
+.menu-categorias-panorama-catuense ul {
+
+    list-style: none; /* estilo da lista: nenhum */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+#espaçamento-direito_acessar_conta {
+    margin-right: 3.3rem;
+}
+
+.menu-categorias-panorama-catuense a {
+
+    text-decoration: none; /* propriedade com valor none, para retirar as decorações do texto (como a cor azul padrão de links) */
+    color: #fff; /* cor do texto */
+    font-size: 18px; /* tamanho da fonte dos textos nas tags a 18px */
+    font-weight: bold; /* tipo negrito nos textos das tags a */
+
+}
+
+
+/* Estilos do menu de navegação e do espaço de comentários para dispositivos com largura de 1280px e altura de 720px */
+@media screen and (width: 975px) and (height: 608px) {
+   
+    .menu-categorias-panorama-catuense ul {
+    
+        list-style: none; /* estilo da lista: nenhum */
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+    
+    #espaçamento-direito_acessar_conta {
+        margin-right: 2.5rem;
+    }
+    
+    .menu-categorias-panorama-catuense a {
+
+        text-decoration: none; /* propriedade com valor none, para retirar as decorações do texto (como a cor azul padrão de links) */
+        color: #fff; /* cor do texto */
+        font-size: 16px; /* tamanho da fonte dos textos nas tags a 18px */
+        font-weight: bold; /* tipo negrito nos textos das tags a */
+    
+    }
+
+    .input_do_campo_de_busca {
+
+        width: 1rem;
+        height: 2rem;
+        background-color: #A80000;
+        border: 1px solid #860F0F;
+        border-radius: 2px;
+        color: #fff;
+    }
+    
+
+    .imagem_da_materia_relacionada_a_principal {
+        width: 100%;
+    }
+    
+    .imagem_da_matéria_principal_aberta {
+        width: 100%;
+    }  
+    
+    #titulo_comentários {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .comentários {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+        
+}
+
+
+/* Estilos do menu de navegação e do espaço de comentários para dispositivos com largura de 1280px e altura de 720px */
+@media screen and (min-width: 1300px) and (min-height: 810px) {
+   
+    .menu-categorias-panorama-catuense ul {
+    
+        list-style: none; /* estilo da lista: nenhum */
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    
+    }
+    
+    #espaçamento-direito_acessar_conta {
+        margin-right: 8.5rem;
+    }
+    
+    .imagem_da_materia_relacionada_a_principal {
+        width: 100%;
+    }
+    
+    .imagem_da_matéria_principal_aberta {
+        width: 100%;
+    }  
+    
+    .comentários {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+        
+}
+
+
+/* Estilos do menu de navegação e do espaço de comentários para dispositivos com largura de 1280px e altura de 720px */
+@media screen and (min-width: 1440px) and (min-height: 1024px) {
+   
+    .menu-categorias-panorama-catuense ul {
+    
+        list-style: none; /* estilo da lista: nenhum */
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+    }
+    
+    #espaçamento-direito_acessar_conta {
+        margin-right: 8.5rem;
+    }
+    
+    .imagem_da_materia_relacionada_a_principal {
+        width: 100%;
+    }
+    
+    .imagem_da_matéria_principal_aberta {
+        width: 100%;
+    }  
+    
+    .comentários {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+        
+}
+
+
+/* Estilos do menu de navegação e do espaço de comentários para dispositivos com largura de 1920px e altura de 1080px */
+@media screen and (min-width: 1900px) and (min-height: 1080px) {
+   
+.menu-categorias-panorama-catuense ul {
+
+    list-style: none; /* estilo da lista: nenhum */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+#espaçamento-direito_acessar_conta {
+    margin-right: 27rem;
+}
+
+.imagem_da_materia_relacionada_a_principal {
+    width: 100%;
+}
+
+.imagem_da_matéria_principal_aberta {
+    width: 100%;
+}  
+
+.comentários {
+    width: 60%;
+    margin-bottom: 20px;
+}
+    
+}
+/* FIM dos estilos do menu de navegação e do espaço de comentários para dispositivos com largura de 1920px e altura de 1080px */
+
+.formulário_de_busca {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input_do_campo_de_busca {
+
+    width: 100%;
+    height: 2rem;
+    background-color: #A80000;
+    border: 1px solid #860F0F;
+    border-radius: 2px;
+    color: #fff;
+}
+
+#texto-busca::placeholder {
+    color: #fff;
+    padding: 5px;
+}
+/* FIM DOS ESTILOS DO CABEÇALHO DO PORTAL PANORAMA CATUENSE /*
+
+
+/* INÍCIOS DOS ESTILOS DO CONTEÚDO PRINCIPAL DA PÁGINA INICIAL E DAS CATEGORIAS DE NOTÍCIAS DO PANORAMA CATUENSE */ 
+.conteúdo-principal-do-portal {
+    
+    width: 90%; /* largura do container (main) com o conteúdo principal */
+    margin: auto; /* margem automática */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    
+}
+
+/* Estilos do tiítulo principal */
+.titulo_principal_do_portal {
+    
+    width: 330px;
+    height: 34px;
+    flex-direction: column;
+    margin-bottom: 13px;
+
+}
+
+.titulo_principal_do_portal h1 {
+
+    text-transform: uppercase; /* propriedade que define a fonte como maiusculo */
+    font-size: 28px;
+    color: #860F0F;
+}
+/* Estilos do titulo principal */
+
+.seção-principal-de-noticias {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destaque {
+
+    width: 32%;
+    margin-bottom: 42px;
+    
+}
+
+.destaque img {
+    
+    width: 100%;
+    height: auto;
+}
+
+.destaque h2 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #860F0F;
+    text-transform: uppercase;
+
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.destaque a {
+    text-decoration: none;
+}
+.destaque p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+/* FIM DOS ESTILOS DA PÁGINA INICIAL DO PANORAMA CATUENSE */
+
+
+/* INÍCIO DOS ESTILOS DO CONTEÚDO PRINCIPAL DA PÁGINA CAMPEONATO DE FUTEBOL NO PORTAL PANORAMA CATUENSE */
+#conteúdo_principal_da_pagina_com_matéria_aberta {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#seção_da_matéria_principal_aberta {
+    width: 60%;
+    overflow: auto;
+}
+
+#contéudo_relacionado_a_matéria_aberta {
+    margin-left: 6%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    overflow: auto;
+}
+
+.imagem_da_materia_relacionada_a_principal {
+    max-width: 100%;
+}
+
+.titulo_principal_da_materia_aberta {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.divisória_com_materia_principal_aberta {
+    width: 100%;
+}
+
+.subtitulo_da_materia_aberta {
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 31px;
+}
+
+.parágrafo_autor_da_matéria_principal {
+    font-size: 14px;
+    padding-bottom: 31px;
+}
+
+.imagem_da_matéria_principal_aberta {
+    max-width: 100%;
+}  
+
+.divisória_com_titulo_noticias_relacionadas {
+    margin-bottom: 5%;
+}
+
+.divisória_com_titulo_noticias_relacionadas h2 {
+    font-size: 22px;
+    color: #860F0F;
+    text-transform: uppercase;
+}
+
+.divisória_com_materia_relacionada_a_principal {
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.titulo_da_matéria_relacionada_a_principal {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #860F0F;
+    margin-top: 13px;
+}
+
+.subtitulo_da_matéria_relacionada_a_principal {
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-top: 6px;
+}
+
+.legenda_da_imagem_da_matéria_principal {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+#conteúdo_principal_independente {
+    width: 100%;
+    margin-top: 27px;
+}
+
+#conteúdo_principal_independente h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.comentários {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#texto_de_comentário {
+    margin-top: 8px;
+    width: 100%;
+    height: 47px;
+    border: solid 1px #6A6868;
+}
+
+.botão_de_enviar_comentário {
+
+    width: 100%;
+    height: 34px;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #6A6868;
+}
+
+/* FIM DOS ESTILOS DO CONTEÚDO PRINCIPAL DA PÁGINA CAMPEONATO DE FUTEBOL NO PORTAL PANORAMA CATUENSE */
+
+
+/*INÍCIO DOS ESTILOS DO CONTEÚDO QUEM SOMOS*/
+.titulo_principal_quem_somos{
+    margin-left: 60px;
+    padding-top: 10px;
+}
+.parágrafo_quem_somos{
+    margin-left: 60px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-bottom: 550px;
+}
+/* FIM DOS ESTILOS DO CONTEÚDO QUEM SOMOS */
+
+/* INÍCIO DOS ESTILOS DO CONTEÚDO FALE CONOSCO */
+.divisória_fale_conosoco{
+    margin-left: 60px;
+}
+.titulo_principal_fale_conosoco{
+    margin-bottom: 20px;
+}
+.parágrafo_fale_conosoco{
+    margin-bottom: 40px;
+}
+.titulo_secundario_email{
+    margin-bottom: 20px;
+}
+.parágrafo_email{
+    margin-bottom: 40px;
+}
+.titulo_secundario_telefone{
+    margin-bottom: 20px;
+}
+.parágrafo_telefone{
+    margin-bottom: 400px;
+}
+/* FIM DOS ESTILOS DO CONTEÚDO FALE CONOSCO */
+
+/* INÍCIO DOS ESTILOS DO CONTEÚDO PRINCIPAL DA TELA DE LOGIN DO PANORAMA CATUENSE */
+#conteúdo_principal_da_página_de_login {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.divisória_do_titulo_principal_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+
+.divisória_do_titulo_principal_login h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.divisórias_do_campo_email_e_senha {
+    width: 100%;
+    margin-bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.divisórias_do_campo_email_e_senha h2 {
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 2%;  
+}
+
+.divisórias_do_campo_email_e_senha input {
+    width: 100%;
+    height: 6vh;
+    border: solid 1px #4D4D4D;
+}
+
+.divisórias_do_campo_email_e_senha a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-decoration: none;
+    color: #000;
+    padding-top: 5%;
+}
+
+.affordance_botão_entrar {
+    width: 100%;
+    height: 6vh;
+    background-color: #860F0F;
+    border: solid 1px #9C9C9C;
+    margin-bottom: 10%;
+}
+
+.affordance_botão_entrar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.divisória_do_titulo_cadastrar_se {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.divisória_do_titulo_cadastrar_se a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px; 
+}
+
+.divisórias_gmail_e_facebook {
+    width: 55%;
+    min-height: 7vh;
+    margin: auto;
+    border: solid 1px rgba(134, 131, 131, 0.5);
+    margin-bottom: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisórias_gmail_e_facebook a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 13px;
+    padding-right: 5px;
+}
+
+
+.icone_do_login_com_gmail {
+
+    width: 13%;
+    margin-right: 10px;
+    vertical-align: middle; /* propriedade para alinhar verticalmente um elemento inline em relação aos elementos pai ou irmãos; middle alinha ao meio da altura do elemento pai */ 
+}
+
+.icone_do_login_com_facebook {
+
+    width: 8%;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+}
+
+/* FIM DOS ESTILOS DO CONTEÚDO PRINCIPAL DA TELA DE LOGIN DO PANORAMA CATUENSE */
+
+/* INÍCIO DOS ESTILOS DO RODAPÉ DO PORTAL PANORAMA CATUENSE */
+.rodapé-panorama-catuense {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 2px solid #860F0F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navegação-rodapé li {
+    list-style-type: none;
+}
+
+#colocar_espaçamento_li {
+    padding-right: 40px;
+    padding-left: 70px;
+}
+
+.navegação-rodapé a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+.navegação-rodapé ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.logotipo_inferior {
+    width: 195px;
+    height: 95px;
+}
+
+.logotipo_inferior img {
+    width: 100%; 
+}
+
+.redes-sociais {
+    padding-right: 70px;
+}
+
+.imagens_redes_sociais {
+    padding-right: 10px;
+}
+/* FIM DOS ESTILOS DO RODAPÉ DO PANORAMA CATUENSE */
+
